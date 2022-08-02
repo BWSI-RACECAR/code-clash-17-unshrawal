@@ -36,7 +36,7 @@ class Solution:
                 list.append([1, 1])
             else:
                 buffer = []
-                for j in range(0, len(list[i-1]), 2):
+                for j in range(0, len(list[i-1])-1):
                     buffer.append(list[i-1][j] + list[i-1][j+1])
                 buffer.append(1)
                 buffer.insert(0, 1)
